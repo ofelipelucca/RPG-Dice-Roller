@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolando Dados</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <h1>Jogue os Dados!</h1>
+    <div class="container">
+        <button onclick="add()" id="ButtonAdd">ADICIONAR</button>
+        <button onclick="remove()" id="ButtonRemove">REMOVER</button>
+    </div>
+    <div class="container1">
+        <select name="ESCOLHA.." id="Select">
+            <option value="0" hidden>ESCOLHA...</option>
+            <option value="4">d4</option>
+            <option value="6">d6</option>
+            <option value="10">d10</option>
+            <option value="20">d20</option>
+            <option value="100">d100</option>
+        </select>
+        <button onclick="roll()" id="ButtonRoll">ROLAR</button>
+    </div>
+    <button onclick="limpar({limparVariaveis: true, limparHTML: true})" id="ButtonLimpar">LIMPAR</button>
+    <div id="DadosEscolhidos"></div>
+    <div id="Resultado">
+        <div id="Qnt_Dados"></div>
+        <div id="Dado"></div>
+        <div id="Numero"></div>
+    </div>
+</body>
+<script src="src/script.js"></script>
+</html>

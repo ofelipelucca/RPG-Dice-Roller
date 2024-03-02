@@ -1,0 +1,185 @@
+html {
+    font-family: Brush Script MT, cursive;
+    background-image: linear-gradient(to bottom right, #590202, #4d0303);
+    color: white;
+}
+h1 { 
+    position: fixed;
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    color: white;
+    font-size: 20vh;
+    user-select: none;
+}
+button {
+    background-color: #1f0101;
+    color: white;
+    width: 24vh;
+    height: 5vh;
+    border-style: solid;
+    border-radius: 2vh;
+    border: none;
+    font-family: Lucida, monospace;
+    font-size: 2.7vh;
+    user-select: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+button:hover {
+    background-color: #420303;
+    border-style: solid;
+    border-color: #1f0101;
+}
+button:active {
+    transition-duration: 0s;
+    background-color: #590202;
+}
+#Select:hover {
+    border-style: solid;
+    border-color: #1f0101;
+    background-color: #240202;
+}
+.container {
+    position: fixed;
+    top: 37%;
+    left: 50%;
+    width: 50vh;
+    height: 10vh;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5vh;
+}
+.container1 {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    width: 50vh;
+    height: 10vh;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5vh;
+}
+#ButtonAdd {
+    position: static;
+    top: auto;
+    left: auto;
+}
+#ButtonRemove {
+    position: static;
+    top: auto;
+    left: auto;
+}
+#ButtonLimpar {
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#ButtonRoll {
+    position: static;
+    top: auto;
+    left: auto;
+}
+#Select {
+    position: static;
+    top: auto;
+    left: auto;
+    width: 50vh;
+    height: 5vh;
+    border-style: solid;
+    border-radius: 1.5vh;
+    background-color: #1f0101;
+    color: white;
+}
+#Resultado {
+    position: fixed;
+    top: 58%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-style: solid;
+    border-color: white;
+    border-radius: 1vh;
+    width: 80vh;
+    height: auto;
+    min-height: 23vh;
+    background-color: #700303;
+    color: white;
+}
+#DadosEscolhidos {
+    position: absolute;
+    z-index: 1;
+    top: 68%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 50%;
+    text-align: center;
+    font-size: 3vh;
+    color: white;
+}
+#Numero {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 4.5vh;
+}
+#Qnt_Dados {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 50%;
+}
+
+@media only screen and (max-width: 530px) {
+    h1 {
+        font-size: 7vh;
+        top: 10%;
+    }
+    button {
+        width: 14vh;
+        font-size: 2vh;
+    }
+    .container {
+        position: fixed;
+        top: 37%;
+        left: 50%;
+        width: 30vh;
+        height: 10vh;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container1 {    }
+    #ButtonAdd {
+        position: static;
+        top: auto;
+        left: auto;
+    }
+    #ButtonRemove {
+        position: static;
+        top: auto;
+        left: auto;
+    }
+    #ButtonRoll {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30vh;
+    }
+    #Select {
+        position: fixed;
+        top: -120%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30vh;;
+    }
+}
