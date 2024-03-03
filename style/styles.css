@@ -116,15 +116,21 @@ button:active {
     z-index: 1;
     top: 68%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -32%);
     opacity: 50%;
     text-align: center;
     font-size: 3vh;
     color: white;
 }
+#Dado {
+    position: fixed;
+    left: 50.5%;
+    transform: translateX(-50%);
+    width: 20vh;
+}
 #Numero {
     position: fixed;
-    top: 50%;
+    top: 44%;
     left: 50%;
     transform: translate(-50%, -30%);
     font-size: 4.5vh;
@@ -136,7 +142,32 @@ button:active {
     transform: translateX(-50%);
     opacity: 50%;
 }
-
+.aparecer {
+    animation: aparecer 1s 1;
+    transition-duration: 0.5s;
+}
+@keyframes aparecer {
+    0% { opacity: 0%; }
+    100% { opacity: 100%; }
+}
+.piscar-background {
+    animation: piscar-background 1s 1;
+    transition-duration: 0.4s;
+}
+@keyframes piscar-background {
+    0% { background-color: #1f0101; color: white; }
+    50% { background-color: white; color: black; }
+    100% { background-color: #1f0101; color: white; }
+}
+.piscar-texto {
+    animation: piscar-texto 1s 1;
+    transition-duration: 0.4s;
+}
+@keyframes piscar-texto {
+    0% { color: white; }
+    50% { color: black; }
+    100% { color: white; }
+}
 @media only screen and (max-width: 530px) {
     h1 {
         font-size: 7vh;
@@ -181,5 +212,8 @@ button:active {
         left: 50%;
         transform: translateX(-50%);
         width: 30vh;;
+    }
+    #DadosEscolhidos {
+        font-size: 2.58vh;
     }
 }
