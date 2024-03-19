@@ -1,5 +1,8 @@
 # Roll Dices
-Um lançador de dados online!
+Um lançador de dados RPG online!
+
+# Código
+O sistema é inteiramente feito em JavaScript (programação funcional), o site foi construído com HTML e CSS puro.
 
 ## Dados Possíveis 
 - d4
@@ -8,4 +11,4 @@ Um lançador de dados online!
 - d20
 - d100
 
-É possível lançar vários dados combinados ao mesmo tempo!
+É possível lançar vários dados combinados ao mesmo tempo!!!
